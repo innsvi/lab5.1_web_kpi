@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обробка масиву та калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Обробка масиву</h1>
+        <label for="arrayInput" class="placeholder">Введіть елементи масиву, розділені комою:</label>
+        <input type="text" id="arrayInput" placeholder="наприклад: 1, 2, 3, 4, 5">
+        <button class="buttonArray" onclick="processArray()">Підтвердити</button>
+
+        <h2>Введений масив:</h2>
+        <p id="originalArray"></p>
+
+        <h2>Модифікований за формулою масив:</h2>
+        <p id="modifiedArray"></p>
+
+        <h2>Відсортований масив:</h2>
+        <p id="sortedArray"></p>
+    </div>
+
+    <div class="calculator">
+        <h1>Калькулятор</h1>
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button class="operator" onclick="setOperation('+')">+</button>
+
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button class="operator" onclick="setOperation('-')">-</button>
+
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="setOperation('*')">*</button>
+
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()">C</button>
+            <button class="operator" onclick="setOperation('/')">/</button>
+
+            <button class="operator" onclick="setOperation('%')">%</button>
+            <button class="operator" onclick="sqrt()">√</button>
+            <button class="operator" onclick="setOperation('^')">^</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

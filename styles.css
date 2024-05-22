@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стилі для обробки масиву */
+.container {
+    width: 45%;
+    margin-right: 5%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: midnightblue;
+}
+h2{
+    font-size: 20px;
+    color: midnightblue;
+
+}
+
+.placeholder {
+    color: midnightblue;
+    font-size: 20px;
+}
+
+.buttonArray {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #f9f9a9;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f3f39d;
+}
+
+p {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Стилі для калькулятора */
+.calculator {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calculator input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: right;
+}
+
+.calculator .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calculator button {
+    width: 22%;
+    margin: 1%;
+    padding: 15px;
+    background-color: #add8e6;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.calculator button:hover {
+    background-color: #87cefa;
+}
+
+.calculator .operator {
+    background-color: #f9f9a9; 
+}
+
+.calculator .operator:hover {
+    background-color: #f3f39d; 
+}
