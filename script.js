@@ -1,38 +1,34 @@
+//ЗАВДАННЯ 1
+//Заданий одновимірний масив А, кількість елементів якого задана користувачем.
+//Побудувати масив В, кожний елемент якого обчислюється за формулою :
+//bі = max*ai де - max це максимальний елемент масиву А. Надрукувати вхідний
+//та вихідний масиви.
+//Виконати сортування методом вставки
+
 // Функція для обробки вхідного масиву і виконання необхідних операцій
 function processArray() {
     // Отримуємо введені користувачем дані
     const input = document.getElementById('arrayInput').value;
-
-    // Перетворюємо вхідний рядок в масив чисел
     const arrayA = input.split(',').map(Number);
-
-    // Знаходимо максимальний елемент в масиві
     const maxElement = Math.max(...arrayA);
 
-    // Створюємо змінений масив B
+  
     const arrayB = arrayA.map(element => element * maxElement);
-
-    // Відображаємо оригінальний масив
     document.getElementById('originalArray').innerText = arrayA.join(', ');
 
-    // Відображаємо змінений масив
     document.getElementById('modifiedArray').innerText = arrayB.join(', ');
 
     // Сортуємо змінений масив за зменшенням за допомогою сортування вставками
     insertionSortDescending(arrayB);
 
-    // Відображаємо відсортований масив
     document.getElementById('sortedArray').innerText = arrayB.join(', ');
 }
 
-// Функція для сортування масиву за зменшенням за допомогою сортування вставками
 function insertionSortDescending(array) {
     for (let i = 1; i < array.length; i++) {
         let key = array[i];
         let j = i - 1;
 
-        // Переміщуємо елементи array[0..i-1], які менші за key,
-        // на одну позицію вперед від їх поточної позиції
         while (j >= 0 && array[j] < key) {
             array[j + 1] = array[j];
             j = j - 1;
@@ -41,6 +37,9 @@ function insertionSortDescending(array) {
     }
 }
 
+
+//ЗАВДАННЯ 2    
+//КАЛЬКУЛЯТОР
 // Змінні для збереження операндів і операції
 let currentInput = '';
 let operator = '';
